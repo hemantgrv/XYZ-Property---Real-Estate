@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar .navbar-brand {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.property-section {
+    margin-top: 8%;
+}
+
+.property-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    /* Add margin bottom to separate cards */
+    padding: 10px;
+    /* Reduce padding inside the card */
+}
+
+.property-card img {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.property-details {
+    padding: 10px;
+    /* Reduce padding for card details */
+}
+
+.property-title {
+    font-weight: bold;
+    font-size: 16px;
+    /* Reduce font size */
+    margin-bottom: 8px;
+    /* Reduce margin */
+}
+
+.property-info {
+    font-size: 12px;
+    /* Reduce font size */
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.property-price {
+    font-size: 18px;
+    /* Reduce font size */
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.see-details-btn {
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    /* Reduce button padding */
+    font-size: 14px;
+    /* Reduce button font size */
+}
+
+/* Reduce card size by controlling the width of columns */
+.property-section .col-md-4 {
+    max-width: 30%;
+    /* Limit the max width of the columns */
+}
+
+@media (max-width: 767.98px) {
+    .property-card {
+        margin-bottom: 15px;
+        /* Increase margin bottom for mobile */
+    }
+
+    .property-section h2 {
+        font-size: 24px;
+        /* Adjust heading size if needed */
+        margin-top: 20%;
+    }
+
+    .property-section .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .property-section .col-md-4 {
+        padding-right: 10px;
+        padding-left: 10px;
+        max-width: 100%;
+        /* Ensure full width on mobile */
+    }
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 10%;
+}
+
+footer h1 {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+footer .social-icons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer .social-icons a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+
+/* Media Query for mobile devices */
+@media (max-width: 767.98px) {
+
+    .navbar {
+        border-bottom: 1px solid #666;
+    }
+
+    .footer-section h1 {
+        font-size: 35px;
+    }
+
+    .property-section h2 {
+        font-weight: 600;
+        margin-top: 25%;
+    }
+}

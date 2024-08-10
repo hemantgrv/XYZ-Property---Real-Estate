@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar .navbar-brand {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: #fff;
+}
+
+.background {
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    width: 100%;
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.background .content a {
+    padding: 8px 20px;
+    font-weight: 600;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+}
+
+.content .heading {
+    font-size: 5rem;
+}
+
+.content .description {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description .btn {
+    font-size: 18px;
+    padding: 8px 15px;
+    /* border-radius: 5px; */
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Feature Section */
+
+.feature {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.feature-box {
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.feature-number {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-section h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.feature-section p {
+    font-size: 20px;
+}
+
+
+/* Location Section */
+.location-info {
+    margin-top: 5%;
+}
+
+.location-section {
+    background-color: #f4f4f4;
+}
+
+.feature-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.feature-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.feature-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.feature-description {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .feature-title {
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .feature-description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+}
+
+/* testimonals-section */
+.testimonals-section {
+    margin-top: 5%;
+}
+
+.testimonals-heading {
+    margin-bottom: 4%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.testimonals-section .row {
+    row-gap: 10px;
+}
+
+.testimonals-section .row p {
+    text-align: center;
+}
+
+.blockquote-footer h5 {
+    color: #000;
+}
+
+/* Contact Us */
+
+.contact a {
+    padding: 10px 25px;
+    font-weight: 500;
+}
+
+.contact-content h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.contact-content p {
+    font-size: 20px;
+}
+
+.contact {
+    margin-top: 10%;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 10%;
+}
+
+footer h1 {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+footer .social-icons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer .social-icons a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+
+/* Media Query for tablets and mobile devices */
+@media (max-width: 992px) {
+    .background {
+        height: 60vh;
+        margin-top: 55px;
+    }
+
+    .content .heading {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .content .description {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .description .btn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 767.98px) {
+    .background {
+        height: 50vh;
+        margin-top: 50px;
+    }
+
+    .content .heading {
+        font-size: 2.5rem;
+    }
+
+    .content .description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .description .btn {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
+    .feature {
+        margin-bottom: 10%;
+    }
+
+    .feature-section h1 {
+        font-size: 42px;
+    }
+
+    .feature-section p {
+        font-size: 18px;
+    }
+
+
+    .location-section {
+        padding: 20px 0px;
+    }
+
+
+    .testimonals-heading {
+        margin-top: 20%;
+        font-size: 42px;
+    }
+
+    .testimonals-section .card {
+        margin-top: 5%;
+    }
+
+    .contact-content h1 {
+        font-size: 42px;
+    }
+
+    .footer-section h1 {
+        font-size: 35px;
+    }
+}
